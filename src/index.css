@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: darkgrey;
+  color: rgb(38, 37, 37);
   background-color: aliceblue;
 
   font-synthesis: none;
@@ -40,8 +40,7 @@ a {
 }
 
 button {
-  border: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
   background-color: transparent;
 }
