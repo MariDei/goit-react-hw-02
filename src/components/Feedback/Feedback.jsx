@@ -1,12 +1,12 @@
-const Feedback = ({ good, neutral, bad, total, positivePerc }) => {
+const Feedback = ({ typeFeedback, totalFeedback, positiveFeedback }) => {
   return (
     <>
       <div>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
-        <p>Total: {total}</p>
-        <p>Positive: {positivePerc}%</p>
+        <p>Good: {typeFeedback.good}</p>
+        <p>Neutral: {typeFeedback.neutral}</p>
+        <p>Bad: {typeFeedback.bad}</p>
+        <p>Total: {totalFeedback}</p>
+        <p>Positive: {positiveFeedback}%</p>
       </div>
     </>
   );
