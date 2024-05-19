@@ -1,0 +1,25 @@
+.wraper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  height: 100%;
+  margin: 20px 5px;
+  padding: 3px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: azure;
+  border: 1px solid azure;
+  border-radius: 15px;
+}
+
+.button:focus,
+.button:hover {
+  background-color: azure;
+  color: rgb(142, 113, 76);
+  box-shadow: 5px 5px 5px gray;
+}

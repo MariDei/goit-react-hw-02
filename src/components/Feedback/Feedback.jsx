@@ -1,7 +1,9 @@
+import css from './Feedback.module.css';
+
 const Feedback = ({ typeFeedback, totalFeedback, positiveFeedback }) => {
   return (
     <>
-      <div>
+      <div className={css.wraper}>
         <p>Good: {typeFeedback.good}</p>
         <p>Neutral: {typeFeedback.neutral}</p>
         <p>Bad: {typeFeedback.bad}</p>

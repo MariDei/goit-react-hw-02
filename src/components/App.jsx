@@ -53,7 +53,6 @@ function App() {
         totalFeedback={totalFeedback}
         handleReset={handleReset}
       />
-
       {totalFeedback > 0 ? (
         <>
           <Feedback
