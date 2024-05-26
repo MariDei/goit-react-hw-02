@@ -3,6 +3,7 @@ import Description from './Description/Description';
 import Feedback from './Feedback/Feedback';
 import Notification from './Notification/Notification';
 import Options from './Options/Options';
+import css from './App.module.css';
 
 function App() {
   const initialFeedback = () => {
@@ -46,7 +47,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={css.container}>
       <Description />
       <Options
         updateFeedback={updateFeedback}

@@ -10,22 +10,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  min-width: 320px;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  color: whitesmoke;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./img/coffee_together.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 h1,
 h2,
 h3,
@@ -57,4 +41,33 @@ button {
   margin: 5px;
   padding: 5px;
   background-color: transparent;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 120px;
+  }
 }

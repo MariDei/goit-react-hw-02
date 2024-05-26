@@ -4,11 +4,19 @@ const Feedback = ({ typeFeedback, totalFeedback, positiveFeedback }) => {
   return (
     <>
       <div className={css.wraper}>
-        <p>Good: {typeFeedback.good}</p>
-        <p>Neutral: {typeFeedback.neutral}</p>
-        <p>Bad: {typeFeedback.bad}</p>
+        <p>
+          Good: <span className={css.good}>{typeFeedback.good}</span>
+        </p>
+        <p>
+          Neutral: <span className={css.neutral}>{typeFeedback.neutral}</span>
+        </p>
+        <p>
+          Bad: <span className={css.bad}>{typeFeedback.bad}</span>
+        </p>
         <p>Total: {totalFeedback}</p>
-        <p>Positive: {positiveFeedback}%</p>
+        <p>
+          Positive: <span className={css.good}>{positiveFeedback}%</span>
+        </p>
       </div>
     </>
   );

@@ -1,15 +1,15 @@
 .wraper {
+  margin: 20px 0 20px 0;
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
 .button {
-  width: 100px;
+  width: 65px;
   height: 100%;
-  margin: 20px 5px;
-  padding: 3px;
-  font-size: 22px;
+  padding: 5px;
+  font-size: 16px;
   font-weight: 600;
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   color: azure;
@@ -22,4 +22,21 @@
   background-color: azure;
   color: rgb(142, 113, 76);
   box-shadow: 5px 5px 5px gray;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    width: 80px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button {
+    width: 120px;
+    padding: 10px;
+    font-size: 26px;
+  }
 }
